@@ -145,21 +145,21 @@ Essa é a transformação de Lorentz para um *boost* (um "chute" de velocidade) 
 
 Com a transformação de Lorentz em mãos, podemos responder a uma pergunta natural: se uma partícula se move com velocidade $W$ no referencial $\bar O$, e $\bar O$ se move com velocidade $v$ em relação a $O$, qual é a velocidade $W'$ da partícula medida por $O$?
 
-Na física newtoniana, a resposta seria simplesmente $W' = W + v$. Vamos ver o que a relatividade diz.
+Na física newtoniana, a resposta seria simplesmente $W' = W + v$, vamos ver o que a relatividade diz.
 
 ### Dedução
 
 Definimos $W \equiv d\bar x/d\bar t$ (velocidade da partícula em $\bar O$) e $W' \equiv dx/dt$ (velocidade da mesma partícula em $O$). Para relacionar os dois, precisamos da transformação **inversa** de Lorentz, de $\bar O$ para $O$ (basta trocar $v \to -v$ e inverter os papéis nas Eqs. da Seção 5):
 
-$$dx = \gamma\,(d\bar x + v\,d\bar t), \qquad dt = \gamma\,(d\bar t + v\,d\bar x)$$
+$$dx = \gamma\(d\bar x + vd\bar t) \qquad \text{e} \qquad dt = \gamma\(d\bar t + vd\bar x)$$
 
 Calculando a razão:
 
-$$W' = \frac{dx}{dt} = \frac{\gamma\,(d\bar x + v\,d\bar t)}{\gamma\,(d\bar t + v\,d\bar x)} = \frac{d\bar x + v\,d\bar t}{d\bar t + v\,d\bar x}$$
+$$W' = \frac{dx}{dt} = \frac{\gamma\(d\bar x + vd\bar t)}{\gamma\(d\bar t + vd\bar x)} = \frac{d\bar x + vd\bar t}{d\bar t + vd\bar x}$$
 
 (o fator $\gamma$ cancela entre numerador e denominador). Dividindo todo mundo por $d\bar t$:
 
-$$W' = \frac{\dfrac{d\bar x}{d\bar t} + v}{1 + v\,\dfrac{d\bar x}{d\bar t}}$$
+$$W' = \frac{\dfrac{d\bar x}{d\bar t} + v}{1 + v\dfrac{d\bar x}{d\bar t}}$$
 
 Como $W = d\bar x/d\bar t$, chegamos à **lei de adição de velocidades de Einstein** (Eq. 1.13 de Schutz):
 
