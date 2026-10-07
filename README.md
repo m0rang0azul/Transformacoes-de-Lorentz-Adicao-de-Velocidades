@@ -1,5 +1,7 @@
 # As Transformações de Lorentz e a Lei de Adição de Velocidades
 
+Luana M. Souza
+
 *Seções 1.9 e 1.10 de Bernard Schutz: finalmente escrevendo a "receita" completa que transforma coordenadas de O para O̅, e o que acontece quando velocidades se somam*
 
 > **Antes de começar:** esta é a continuação de [Hipérboles Invariantes](https://github.com/m0rang0azul/hiperboles--invariantes), que por sua vez usa resultados de [Invariância do Intervalo](https://github.com/m0rang0azul/invariancia-do-intervalo) e [Geometria do Espaço-Tempo](https://github.com/m0rang0azul/Relatividade-Geral---Diagrama-de-Minkowski). Nos posts anteriores, usamos a transformação de Lorentz sem deduzi-la (chamando-a de "Eq. 1.12" e tomando-a como dada), discutimos também a [Dilatação do Tempo e a Contração do Comprimento](https://github.com/m0rang0azul/Dilatacao-no-Tempo--Contracao-no-Comprimento). Agora, fechamos essa lacuna: vamos deduzir essas equações do zero, usando só o que já provamos até aqui.
@@ -10,9 +12,11 @@
 
 Para simplificar, consideramos apenas movimento ao longo do eixo $x$: o referencial $\bar O$ se move com velocidade constante $v$ (em unidades com $c=1$) na direção $x$ positiva de $O$. Partimos de três hipóteses que já usamos antes, nesta série:
 
-- **Origens coincidentes:** $t=\bar t=0$ ocorre no mesmo evento que $x=\bar x=y=\bar y=z=\bar z=0$.
-- **Invariância transversal:** como não há movimento relativo nas direções $y$ e $z$, as distâncias perpendiculares ao movimento não mudam (é o resultado que já tínhamos provado no post sobre invariância do intervalo, com a barra perpendicular): $\bar y = y,\ \bar z = z$.
-- **Linearidade:** a transformação entre referenciais inerciais precisa ser linear (mesma hipótese da Seção 1.6), para que uma partícula livre continue se movendo em linha reta e com velocidade constante em qualquer referencial. Escrevemos a forma mais geral possível:
+:clock4: **Origens coincidentes:** $t=\bar t=0$ ocorre no mesmo evento que $x=\bar x=y=\bar y=z=\bar z=0$.
+
+:clock10: **Invariância transversal:** como não há movimento relativo nas direções $y$ e $z$, as distâncias perpendiculares ao movimento não mudam (é o resultado que já tínhamos provado no post sobre invariância do intervalo, com a barra perpendicular): $\bar y = y,\ \bar z = z$.
+
+:clock11: **Linearidade:** a transformação entre referenciais inerciais precisa ser linear (mesma hipótese da Seção 1.6), para que uma partícula livre continue se movendo em linha reta e com velocidade constante em qualquer referencial. Escrevemos a forma mais geral possível:
 
 $$\bar t = \alpha\ t + \beta\ x \qquad \text{e} \qquad \bar x = \kappa\ t + \sigma\ x$$
 
@@ -169,9 +173,11 @@ $$\boxed{W' = \frac{W+v}{1+Wv}}$$
 
 **1. Nunca se ultrapassa $c=1$.** Suponha, por absurdo, que $W'=1$ mesmo com $W<1$ e $v<1$:
 
-$$1 = \frac{W+v}{1+Wv} \;\Longrightarrow\; 1+Wv = W+v \;\Longrightarrow\; 1-v-W+Wv=0 \;\Longrightarrow\; (1-v)(1-W) = 0$$
+$$
+1 = \frac{W+v}{1+Wv} \qquad \Longrightarrow\ \qquad 1+Wv = W+v \qquad \Longrightarrow\ \qquad 1-v-W+Wv=0 \qquad \Longrightarrow\ \qquad (1-v)(1-W) =0
+$$
 
-Essa igualdade só é satisfeita se $v=1$ ou $W=1$. Ou seja: **somar duas velocidades estritamente menores que $1$ nunca produz uma velocidade maior ou igual a $1$.** A velocidade da luz funciona como um limite que a soma relativística respeita automaticamente, diferente da soma newtoniana ingênua.
+Essa igualdade só é satisfeita se $v=1$ ou $W=1$. Ou seja: **somar duas velocidades estritamente menores que $1$ nunca produz uma velocidade maior ou igual a $1$.** A velocidade da luz funciona como um limite que a soma relativística respeita automaticamente, diferente da soma newtoniana.
 
 **2. A luz continua andando a $1$, não importa o referencial.** Se a "partícula" for um fóton, $W=1$:
 
@@ -189,4 +195,8 @@ $$W' \approx W + v$$
 
 ## Referências
 
-- SCHUTZ, Bernard. *A First Course in General Relativity*. 3ª ed. Cambridge: Cambridge University Press, 2022. Capítulo 1, Seções 1.9 e 1.10.
+- SCHUTZ, Bernard. *A First Course in General Relativity*. 3ª ed. Cambridge: Cambridge University Press, 2022. Capítulo 1, Seção 1.9 e 1.10.
+
+---
+
+*Post baseado no experimento mental do relógio de luz e nos diagramas de Minkowski, seguindo a abordagem do livro de Bernard Schutz, "A First Course in General Relativity".*
